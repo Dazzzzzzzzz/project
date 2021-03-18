@@ -1,35 +1,46 @@
 "use strict";
 
-let incr = 10,
-    decr = 10;
-// incr++;
-// decr--;
 
-console.log(incr++);
-console.log(decr--);
-
-console.log(incr);
-console.log(decr);
+const nubmerOfFilms = +prompt("Сколько фильмов вы уже посмотрели?","");
+console.log(nubmerOfFilms);
 
 
+const personalMovieDB = {
+    count: nubmerOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat:false
 
 
+};
 
+const a = prompt("Один из последних просмотренных фильмов?",""),
+    b = prompt("На сколько оцените его?",""),
+    c = prompt("Один из последних просмотренных фильмов?",""),
+    d = prompt("На сколько оцените его?","");
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+console.log(personalMovieDB);
+
+
+// let incr = 10,
+//     decr = 10;
+// // incr++;
+// // decr--;
+
+// console.log(incr++);
+// console.log(decr--);
+
+// console.log(incr);
+// console.log(decr);
 
 
 
 
 
 // console.log('arr' + "- object");
-
-
-
-
-
-
-
-
-
 
 
 // const category = 'guns';
@@ -39,22 +50,6 @@ console.log(decr);
 // const user = "Ivan";
 
 // alert(`Hello, ${user}`);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // const obj = {
